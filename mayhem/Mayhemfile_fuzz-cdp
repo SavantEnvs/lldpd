@@ -1,0 +1,10 @@
+project: savantenvs/lldpd
+target: fuzz-cdp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-cdp/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz-cdp
+    libfuzzer: true
+    timeout: 5

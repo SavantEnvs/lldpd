@@ -1,0 +1,9 @@
+project: savantenvs/lldpd
+target: decode
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/decode/testsuite
+
+cmds:
+  - cmd: /mayhem/decode @@
+    timeout: 5

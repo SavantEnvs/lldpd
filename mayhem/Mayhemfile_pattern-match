@@ -1,0 +1,7 @@
+project: savantenvs/lldpd
+target: pattern-match
+
+cmds:
+  - cmd: /mayhem/fuzz-pattern-match
+    libfuzzer: true
+    timeout: 5
